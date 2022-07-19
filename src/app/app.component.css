@@ -1,0 +1,100 @@
+.table {
+  display: flex;
+}
+.table-header, .table-lines {
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
+.table-header-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.table-item {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-height: 60vh;
+  margin: 0 auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.table-line {
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  border-bottom: 1px solid darkgray;
+}
+
+.table-line:last-child {
+  border-bottom: none;
+}
+
+.table-line-name {
+  font-size: 14px;
+}
+
+.table-line-mod {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.table-line-button {
+  visibility: hidden;
+}
+
+.table-line:hover > .table-line-button{
+  visibility: visible;
+}
+
+.table-header-item:first-child{
+  border-right: 1px solid black;
+}
+.table-header-item:last-child{
+  border-left: 1px solid black;
+}
+
+.table-header-item > span {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 20px auto 10px auto;
+}
+
+.table-header-item > form {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 5px auto;
+}
+
+.table-header-item > form > input {
+  margin-right: 3px;
+}
+
+.vote {
+  display: flex;
+  flex-direction: column;
+}
+
+.vote > span {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px auto;
+}
+
+.vote > form {
+  margin: 0 auto;
+}
+
+.vote > form > select {
+  padding: 5px 10px;
+  margin-right: 15px;
+}
+
+.vote > form > button {
+  padding: 5px 10px 4px 10px;
+}
